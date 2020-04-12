@@ -1,3 +1,9 @@
+# Home Assistant Website Backup Manager script V0.1
+# Pushes a backup copy of the website and SQL database to Dropbox
+# Triggered and controled by Home Assistant Frontend
+# For more information visit https://siytek.com
+# The awesome Home Assistant: https://home-assistant.io
+
 #!/bin/bash
 
 # Script config
@@ -12,7 +18,7 @@ username="$2"
 database="$3"
 password="$4"
 
-# Dropbox config 
+# Dropbox config
 dropbox_key="$5"
 dropbox_path=$7 # Backup storage location
 
