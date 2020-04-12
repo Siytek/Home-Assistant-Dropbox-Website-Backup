@@ -1,0 +1,14 @@
+# Automation integration website Dropbox backup script
+# Author: siytek.com
+# Launches website backup at specified time
+alias: "Fire wordpress backup"
+trigger:
+  platform: template
+  value_template: "{{ states('sensor.time') == (states.input_datetime.wordpress_backup_time.attributes.timestamp | int | timestamp_custom('%H:%M', False)) }}"
+condition:
+  condition: state
+  entity_id: input_boolean.wordpress_backup_enabled
+  state: 'on'
+action:
+  service: script.turn_on
+  entity_id: script.backup_wordpress

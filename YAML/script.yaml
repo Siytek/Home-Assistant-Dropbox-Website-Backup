@@ -1,0 +1,7 @@
+# Script integration website Dropbox backup script
+# Author: siytek.com
+# Launch backup shell command
+backup_wordpress:
+  alias: "Backup Wordpress"
+  sequence:
+    service: shell_command.wordpress_backup

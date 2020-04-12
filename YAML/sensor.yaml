@@ -1,0 +1,11 @@
+# Sensor integration website Dropbox backup script
+# Author: siytek.com
+# Fetches last backup time from the website
+- platform: command_line
+  name: "Wordpress Last Backup"
+  command: curl https://<your-domain>/<your-log-file>.log
+# Initilizes the date and time sensors
+- platform: time_date
+  display_options:
+    - 'time'
+    - 'date'

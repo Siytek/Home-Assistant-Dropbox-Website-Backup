@@ -1,0 +1,7 @@
+# Input_datetime integration website Dropbox backup script
+# Author: siytek.com
+# Create an input box for auto backup time
+wordpress_backup_time:
+  name: "Auto Backup Time"
+  has_time: true
+  has_date: false

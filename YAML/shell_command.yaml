@@ -1,0 +1,5 @@
+# Shell_command integration website Dropbox backup script
+# Author: siytek.com
+# SSH to webserver and launch backup script
+# ssh -i [your key] -o 'StrictHostKeyChecking=no' [user]@[web domain] -p [port] '[path to script] [overwrite on/off] [MySQL Username] [MySQL Database] [MySQL Password] [Dropbox Key] [Public HTML path] [Dropbox path] [Timedate path]'
+wordpress_backup: ssh -i /config/ssh/id_rsa -o 'StrictHostKeyChecking=no' <user>@<domain> -p <port> '<path to script> {{states("input_boolean.wordpress_overwrite")}} <MySQL Username> <MySQL Database> <MySQL Password> <Dropbox Key> <Public HTML path> <Dropbox path> <Timedate path>'

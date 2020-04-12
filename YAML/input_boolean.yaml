@@ -1,0 +1,10 @@
+# Input_boolean integration website Dropbox backup script
+# Author: siytek.com
+# Option to create date marked backups or overwrite one file
+wordpress_overwrite:
+  name: "Write Over Backup"
+  icon: mdi:harddisk-remove
+# Option to backup automatically at specified time
+wordpress_backup_enabled:
+  name: "Auto Backup On/Off"
+    icon: mdi:harddisk
