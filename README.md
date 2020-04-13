@@ -6,3 +6,7 @@
  1. Copy the YAML to your integrations in your Home Assistant configuration
  2. Enter your details into the shell command placeholders
  3. Upload the bash script to your web server
+
+# Further instructions on the article
+
+https://siytek.com/home-assistant-website-backup/
